@@ -1,0 +1,160 @@
+body{
+    background-color: #f4f1de;
+    color: "black";
+    font-weight: 500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    margin: 1%;
+}
+.nav{
+   text-align: right;
+   background-color: #f2cc8f;
+   position: sticky;
+   top: 2px;
+}
+button{
+    background-color:#81b29a;
+    font-size: 20px;
+    margin: 0.6% 0%;
+}
+
+
+.finddonor {
+    background-color: #f8e3c2;
+    border-radius: 3%;
+    border: 2px solid #033f5e;
+    padding-left: 2%;
+    padding: 1%;
+    margin-top: 1%;
+}
+
+.findonor input,select {
+    display: inline;
+    width: 12%;
+    border: 2px solid #033f5e;
+    border-radius: 10%;
+}
+
+a{
+    color: #023047;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: #e07a5f;
+    text-decoration: underline;
+}
+.head{
+    color: red;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.head img{
+    display: inline-flex;
+    width:3%;
+}
+.row{
+    display: flex;
+    border: 1px solid #81b29a;
+    padding:1%;
+    border-top: none;
+    border-bottom: none;
+}
+.cnt{
+    border: 1px solid #81b29a;
+    padding:1%;
+    border-top: none;
+    border-bottom: none;
+}
+.half{
+    flex: 50%;
+  padding: 5px;
+}
+.half b{
+    font-size: 1.4rem;
+    color: #023047;
+}
+
+img{
+    height:100%;
+    width: 100%;
+}
+
+#cont{
+    color: #3d405b;
+    text-align: center;
+    margin: 0% 5%;
+}
+
+div h2, .cnt h2{
+    color: #3d405b;
+}
+
+table,td {
+    border: 1px solid #3d405b;
+}
+
+thead, tfoot {
+    background-color: #81b29a;
+    color: #3d405b;  
+}
+table{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+form{
+    font-size: 25px;
+}
+
+.register h1{
+    color:#023047;
+}
+
+.register{
+    margin: 5% auto;
+    width:40%;
+    padding: 1rem;
+    text-align: center;
+    background-color: #f2cc8f;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: #023047;
+    border: 0.5rem outset #023047;
+    border-radius: 15%;
+}
+
+.register span{
+    color: red;
+}
+
+input,select {
+    display: inline-block;
+    width: 35%;
+    border: 2px solid #033f5e;
+    border-radius: 10%;
+}
+
+label {
+    width:180px;
+    display: inline-block;
+    text-align: left;
+}
+
+form a{
+    color: #023047;
+    text-decoration: underline;
+}
+
+form a:hover {
+    background-color:#81b29a;
+}
+
+#signin {
+    border-radius: 25%;
+}
+
+#space {
+    margin-top: 5%;
+}

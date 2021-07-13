@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blood_bank.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Donors</title>
+</head>
+
+<body>
+    <div class="nav">
+        <button>
+            <a href="Blood_bank_Home.html">
+                <i class="fa fa-home"></i>
+                Home
+            </a>
+        </button>
+        <button>
+            <a href="content_bb.html">
+                <i class="fa fa-question-circle"></i>
+                Why donate blood??
+            </a>
+        </button>
+        <button>
+            <a href="content_bb.html">
+                <i class="fa fa-question-circle"></i>
+                Who needs blood??
+            </a>
+        </button>
+        <button>
+            <a href="Contact.html">
+                <i class="fa fa-phone"></i>
+                Contact Us!
+            </a>
+        </button>
+        <button>
+            <a href="registration.html">
+                <i class="fa fa-user"></i>
+                Sign-up
+            </a>
+        </button>
+        <button>
+            <a href="userlist.html">
+                <i class="fa fa-user"></i>
+                Donors
+            </a>
+        </button>
+    </div>
+
+    <div id="space"></div>
+
+    <table id="content-table" table-border="1">
+        <thead>
+            <tr>
+                <th class="id">Blood Group &nbsp; <a href="javascript:sort(true, 'id', 'content-table');"><button
+                            class="button button1">Asc</button></a> <a
+                        href="javascript:sort(false, 'id', 'content-table');"><button
+                            class="button button1">Des</button></a>
+                </th>
+                <th class="Name">Donor Name &nbsp;<a href="javascript:sort(true, 'Name', 'content-table');"><button
+                            class="button button1">Asc</button></a> <a
+                        href="javascript:sort(false, 'Name', 'content-table');"><button
+                            class="button button1">Des</button></a>
+                </th>
+                <th class="Location">Donor Location &nbsp; <a
+                        href="javascript:sort(true, 'Location', 'content-table');"><button
+                            class="button button1">Asc</button></a>
+                    <a href="javascript:sort(false, 'Location', 'content-table');"><button
+                            class="button button1">Des</button></a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="id">O+</td>
+                <td class="Name">Muskan</td>
+                <td class="Location">Karnataka</td>
+            </tr>
+            <tr>
+                <td class="id">O-</td>
+                <td class="Name">Ankit</td>
+                <td class="Location">TamilNadu</td>
+            </tr>
+            <tr>
+                <td class="id">B+</td>
+                <td class="Name">Manya</td>
+                <td class="Location">Maharashtra</td>
+            </tr>
+            <tr>
+                <td class="id">A+</td>
+                <td class="Name">Anjali</td>
+                <td class="Location">Tripura</td>
+            </tr>
+            <tr>
+                <td class="id">A-</td>
+                <td class="Name">Shambhavi</td>
+                <td class="Location">Patna</td>
+            </tr>
+            <tr>
+                <td class="id">O+</td>
+                <td class="Name">Tanya</td>
+                <td class="Location">Chattisgarh</td>
+            </tr>
+            <tr>
+                <td class="id">A-</td>
+                <td class="Name">Akanksha</td>
+                <td class="Location">UP</td>
+            </tr>
+            <tr>
+                <td class="id">B+</td>
+                <td class="Name">Madhan</td>
+                <td class="Location">Delhi</td>
+            </tr>
+            <tr>
+                <td class="id">O+</td>
+                <td class="Name">Charan</td>
+                <td class="Location">Shimla</td>
+            </tr>
+            <tr>
+                <td class="id">AB-</td>
+                <td class="Name">Naveen</td>
+                <td class="Location">Chennai</td>
+            </tr>
+            <tr>
+                <td class="id">AB+</td>
+                <td class="Name">Zoya</td>
+                <td class="Location">Kerela</td>
+            </tr>
+            <tr>
+                <td class="id">O+</td>
+                <td class="Name">Santoshi</td>
+                <td class="Location">Telangana</td>
+            </tr>
+            <tr>
+                <td class="id">O-</td>
+                <td class="Name">Maha</td>
+                <td class="Location">Goa</td>
+            </tr>
+            <tr>
+                <td class="id">A+</td>
+                <td class="Name">Harshitha</td>
+                <td class="Location">Punjab</td>
+            </tr>
+            <tr>
+                <td class="id">O+</td>
+                <td class="Name">Rajini</td>
+                <td class="Location">Mumbai</td>
+            </tr>
+            <tr>
+                <td class="id">A+</td>
+                <td class="Name">Vijaya</td>
+                <td class="Location">Jammu</td>
+            </tr>
+            <tr>
+                <td class="id">B+</td>
+                <td class="Name">Pooja</td>
+                <td class="Location">Orissa</td>
+            </tr>
+            <tr>
+                <td class="id">A+</td>
+                <td class="Name">Astha</td>
+                <td class="Location">Gujarat</td>
+            </tr>
+            <tr>
+                <td class="id">A-</td>
+                <td class="Name">Bhargavi</td>
+                <td class="Location">Haryana</td>
+            </tr>
+            <tr>
+                <td class="id">B+</td>
+                <td class="Name">Sneha</td>
+                <td class="Location">Bihar</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script type="text/javascript">
+        function sort(ascending, columnClassName, tableId) {
+            var tbody = document.getElementById(tableId).getElementsByTagName(
+                "tbody")[0];
+            var rows = tbody.getElementsByTagName("tr");
+            for (var i = 0; i < rows.length - 1; i++) {
+                for (var r = 0; r < rows.length - 1; r++) {
+                    var row = rows[r];
+                    var nextRow = rows[r + 1];
+                    var value = row.getElementsByClassName(columnClassName)[0].innerHTML;
+                    var nextValue = nextRow.getElementsByClassName(columnClassName)[0].innerHTML;
+                    if (!isNaN(value)) {
+                        value = parseFloat(value);
+                        nextValue = parseFloat(nextValue);
+                    }
+                    if (ascending ? value > nextValue : value < nextValue) {
+                        tbody.insertBefore(nextRow, row);
+                    }
+                }
+
+            }
+        }
+    </script>
+</body>
+
+
+</html>

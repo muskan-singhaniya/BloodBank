@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blood_bank.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Signin</title>
+</head>
+
+<body>
+    <div class="nav">
+        <button>
+            <a href="Blood_bank_Home.html">
+                <i class="fa fa-home"></i>
+                Home
+            </a>
+        </button>
+        <button>
+            <a href="content_bb.html">
+                <i class="fa fa-question-circle"></i>
+                Why donate blood??
+            </a>
+        </button>
+        <button>
+            <a href="content_bb.html">
+                <i class="fa fa-question-circle"></i>
+                Who needs blood??
+            </a>
+        </button>
+        <button>
+            <a href="Contact.html">
+                <i class="fa fa-phone"></i>
+                Contact Us!
+            </a>
+        </button>
+        <button>
+            <a href="registration.html">
+                <i class="fa fa-user"></i>
+                Sign-up
+            </a>
+        </button>
+        <button>
+            <a href="userlist.html">
+                <i class="fa fa-user"></i>
+                Donors
+            </a>
+        </button>
+    </div>
+
+    <div class="register" id="signin">
+        <h1>Donor Registration</h1>
+        <form method="post" action="#">
+            <label for="email">Email id <span>*</span> : </label>
+            <input type="email" id="email" placeholder="Email id" name="email" required>
+            <br>
+            <label for="pw">Password <span>*</span> : </label>
+            <input type="password" id="pw" placeholder="Password" name="pw" required>
+            <br>
+            <button onclick="checkpassword()" type="submit">Submit!!!</button>
+            <hr>
+            <p><b>Don't have an account?? <a href="registration.html"><i class="fa fa-user"></i> Register Now!</a></b>
+            </p>
+        </form>
+    </div>
+    <script type="text/javascript">
+        function checkpassword() {
+            var pw = document.getElementById("pw").value;
+            if (pw == "muskannn") {
+                alert("Successful!");
+                break;
+            }
+            else {
+                alert("Incorrect password!! " + i + "attempts left!")
+            }
+        }
+    </script>
+</body>
+
+
+</html>

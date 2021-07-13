@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="blood_bank.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <button>
+                <a href="Blood_bank_Home.html">
+                    <i class="fa fa-home"></i>
+                    Home
+                </a>
+            </button>
+            <button>
+                <a href="content_bb.html">
+                    <i class="fa fa-question-circle"></i>
+                    Why donate blood??
+                </a>
+            </button>
+            <button>
+                <a href="content_bb.html">
+                    <i class="fa fa-question-circle"></i>
+                    Who needs blood??
+                </a>
+            </button>
+            <button>
+                <a href="Contact.html">
+                    <i class="fa fa-phone"></i>
+                    Contact Us!
+                </a>
+            </button>
+            <button>
+                <a href="registration.html">
+                    <i class="fa fa-user"></i>
+                    Sign-up
+                </a>
+            </button>
+        </div>
+        <div class="finddonor">
+            <h2>
+                <center>Find a donor <i class="fa fa-user"></center></i>
+            </h2>
+            <form method="post" action="#">
+                <label for="country">Country <span>*</span> : </label>
+                <input type="text" id="country" placeholder="for ex: India" name="country" required>
+                <label for="state">State <span>*</span> : </label>
+                <input type="text" id="state" placeholder="for ex: Karnatka" name="state" required>
+                <label for="city">City / District <span>*</span> : </label>
+                <input type="text" id="city" placeholder="for ex: Bangalore" name="city" required>
+                <label for="bg">Blood Group <span>*</span> : </label>
+                <select name="bg" id="bg">
+                    <option value="none">---Blood Group---</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B-">B-</option>
+                    <option value="B+">B+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="AB+">AB+</option>
+                </select><br>
+                <center><button onclick="donoravailability()" type="submit"><a href="registration.html">Let's Go!</a>
+                    </button></center>
+            </form>
+        </div>
+        <div class="head">
+            <h1><img src="bloodbank3.jpg" alt=""> Blood Bank <img src="bloodbank3.jpg" alt=""></h1>
+        </div>
+
+        <div class="row">
+            <div class="half" style="margin-top: 5%;">
+                WE WELCOME YOU to the Blood Bank database in our WebSite. If you are a donor , We appreciate you
+                signing up online as a Donor. If you need blood we are happy to help you.
+
+                This blood donor list is hosted by <a href="easyinsuranceindia.com">easyinsuranceindia.com</a> as a
+                public service without any profit motive. This is a free service.<br>
+
+                While the Organisers have taken all steps to obtain accurate and up-to-date information of potential
+                blood donors, the Organisers and ICM Computers do not guarantee accuracy of the information contained
+                herein or the suitability of the persons listed as any liability for direct or consequential damage to
+                any person using this blood donor list including loss of life or damage due to infection of any nature
+                arising out of blood transfusion from persons whose names have been listed in this website.<br><br>
+                <b>We request donors to update contact details regularly.</b>
+            </div>
+            <div class="half">
+                <img src="bloodbank5.jpg" style="width:100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="half">
+                <img src="bloodbank2.jpg" style="width:100%">
+            </div>
+            <div class="half" style="margin-top: 3.5%;">
+                <h2>Tips on blood donating</h2>
+                <ol>
+                    <li>Please have a good meal at least 3 hours before donating blood.</li>
+                    <li>Please accept the snacks offered after the donation. It is recommended to have a good meal
+                        later.</li>
+                    <li>Please avoid smoking on the day before donating. One can smoke 3 hours after donation.</li>
+                    <li>One is not eligible to donate blood if you have consumed alcohol 48 hours before donation.</li>
+                </ol>
+                <h2>Misconception about Donating Blood</h2>
+                <ul>
+                    <li>You will not feel drained or tired if you continue to drink fluids and have a good meal.</li>
+                    <li>You can resume your normal activities after donating blood, though you are asked to refrain from
+                        exercise or heavy weight lifting for twelve hours after donation.</li>
+                    <li>Donating blood will not leave you low of blood; in fact you will still have surplus blood after
+                        the donation.</li>
+                    <li>While donating blood you will not feel any pain.</li>
+                    <li>You will not faint or feel uncomfortable after donating blood. This is a common misconception.
+                    </li>
+                    <li>You will not get AIDS if you donate blood.</li>
+                    <li>Patients are just like donors - most of them have common blood types. Because your blood type is
+                        common, the demand for that type is greater than for rare types. So, even if your blood type is
+                        common there is still a requirement.</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <script type="text/javascript">
+        function donoravailability() {
+            var country = document.getElementById("country").value;
+            var state = document.getElementById("state").value;
+            var bg = document.getElementById("bg").value;
+            if (country == "India" && state == "Karnatka" && bg == "O+") {
+                alert("Donor available!! Please Create an account or login into your existing account to know more");
+                window.location.href = "registration.html";
+            }
+            else {
+                alert("Sorry, No donor available!");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
